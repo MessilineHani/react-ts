@@ -11,6 +11,10 @@
     text-rendering: optimizeLegibility;
   }
 
+  html {
+    background: #f7f8fa;
+  }
+
   * {
     box-sizing: border-box;
   }

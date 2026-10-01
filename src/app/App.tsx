@@ -1,13 +1,6 @@
-import { PageShell } from '../components/layout/PageShell'
-import { HomePage } from '../pages/HomePage'
-import { useDocumentTitle } from '../hooks/useDocumentTitle'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './AppRoutes'
 
 export function App() {
-  useDocumentTitle('React TypeScript Starter')
-
-  return (
-    <PageShell>
-      <HomePage />
-    </PageShell>
-  )
+  return <RouterProvider router={router} />
 }

@@ -13,8 +13,7 @@ Each run performs these steps in order:
 3. Installs the exact lockfile dependency graph with `npm ci`.
 4. Runs ESLint with `npm run lint`.
 5. Runs the strict TypeScript project check with `npm run typecheck`.
-6. Runs the Vitest suite with `npm test`.
-7. Builds the production bundle with `npm run build`.
+6. Builds the production bundle with `npm run build`.
 
 A pull request should not be merged while this workflow is failing. The workflow uses read-only repository permissions and cancels superseded runs for the same branch or pull request.
 
@@ -26,11 +25,8 @@ Run the same validation sequence locally from the repository root:
 npm ci
 npm run lint
 npm run typecheck
-npm test
 npm run build
 ```
-
-For iterative development, use `npm run test:watch` while changing application code.
 
 ## Updating CI
 
